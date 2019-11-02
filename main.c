@@ -40,9 +40,9 @@ int main(void)
 	}
 
 	for(i=0; i<5; i++)
-		printf("score[%d] = %d\n", I, score[i]);
+		printf("score[%d] = %d\n", i, score[i]);
 
-	return 0;
+	return;
 }
 
 // (2)
@@ -61,7 +61,7 @@ int main(void) {
 			printf("%i is different\n", i);
 		}
 	 } 
-		return 0;
+		return;
 
 }
 
