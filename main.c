@@ -1,9 +1,73 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// 09-01>
 
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
-int addMatrix(int A[][3], int B[][3], int C[][3]){
+int main(int argc, char *argv[]) {
+	
+	int i;
+	int grade[5]; 
+	
+	grade [0] = 10;
+	grade [1] = 20;
+	grade [2] = 30;
+	grade [3] = 40;
+	grade [4] = 50;
+	
+		for(i=0; i<5; i++)
+	{
+		printf("grade [%d] = %d\n", i, grade[i]);
+	}
+	
+		return 0;
+}
+
+// 09-03>
+
+// (1)
+
+int main(void)
+{
+	int i;
+	int grade[5];
+	int score[5];
+
+
+	for(i=0; i<5; i++)
+	{
+		grade[i] = rand() % 100;
+		score[i] = grade[i];
+	}
+
+	for(i=0; i<5; i++)
+		printf("score[%d] = %d\n", I, score[i]);
+
+	return 0;
+}
+
+// (2)
+
+int main(void) {
+		
+	int i;
+	
+	int a[5] = {1,2,3,4,5};
+	int b[5] = {1,2,3,5,5};
+	
+	for(i=0; i<5; i++)
+	{
+		if (a[i] != b[i])
+		{
+			printf("%i is different\n", i);
+		}
+	 } 
+		return 0;
+
+}
+
+// 09_06>
+
+void addMatrix(int A[][3], int B[][3], int C[][3]){
 	
 	int i,j;
 	
